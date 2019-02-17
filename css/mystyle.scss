@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Oswald');
+@import url('https://fonts.googleapis.com/css?family=Muli');
 $primary-color:#6B007F;
 body{
 	margin: 0;
 	background-color:#F4ECDB;
-	font-family: 'Oswald', sans-serif;
+	font-family: 'Muli', sans-serif;
 }
 a{
 	text-decoration: none;
@@ -26,7 +26,7 @@ a{
 	text-align: center;
 }
 #mywelcome{
-	padding:80px 0;
+	padding:50px 0 90px 0;
 	border-bottom:1px dashed #DDD4C0;
 }
 .myintroduction{
@@ -35,13 +35,16 @@ a{
 	h1,p{
 		margin: 0;
 		padding:0;
+		font-family: 'Muli', sans-serif;
 	}
 	h1{
 		border-bottom:2px solid $primary-color;
-		width: 75%;
+		width: 100%;
+		font-size: 1.2em;
 	}
 	p{
-		font-size:1.35em;
+		font-size:1.2em;
+		text-align: right;
 	}
 }
 .sectiontitle{
@@ -81,7 +84,7 @@ a{
 	background-color:$primary-color;
 	color:#ffffff;
 	text-align:center;
-	padding:20px 0;
+	padding:20px 5px;
 	h3{
 		font-size:1.5em;
 		margin:0; 
@@ -107,13 +110,18 @@ a{
 }
 .my-summarry{
 	color:#fff;
+	font-family: 'Muli', sans-serif;
+	text-align: center;
+	margin-top: 5px;
 }
 .techilove{
+	margin:30px 0;
 	h3{
 		color:#fff;
+		text-align: center;
 	}
 	ul{
-		padding:0;
+		padding:0 0 0 30px;
 		margin: 0;
 		li{
 			margin:10px;
@@ -125,5 +133,87 @@ a{
 				font-size: 3em;
 			}
 		}
+	}
+}
+#contact{
+	h3{
+		font-weight:600;
+	}
+}
+.contact-list{
+	li{
+		a{
+			color:$primary-color;
+		}
+		margin-right: 5px;
+		list-style: none;
+		display: inline-block;
+		i{font-size: 1.5em;}
+	}
+	
+}
+
+@media(min-width:992px){
+	.myintroduction{
+		h1,p{
+			font-size: 3em;
+		}
+	}
+	.sectiontitle{
+		font-size: 3em;
+	}
+	.sectiontitlewhite{
+		font-size: 3em;
+	}
+	#projects{
+		padding:80px 0 200px 0;
+	}
+	.project-text{
+		min-height: 100px;
+	}
+	#myprofile{
+		padding: 80px 0;
+	}
+	.myavatar{
+		margin:40px 0;
+	}
+	.contact-list{
+		li{
+			margin-right: 20px;
+			margin-left: 20px;
+			i{font-size: 3em;}
+		}
+	}
+	.techilove{
+		h3{
+			font-size: 2.5em;
+		}
+		ul{
+			li{
+				i{
+					font-size:6em;
+				}
+			}
+		}
+	}
+	.image-avatar{
+		margin-left:auto;
+		margin-right: auto;
+		border:1px dashed #DDD4C0;
+		border-radius:50%;
+		width: 310px;
+		height: 310px;
+		padding:5px;
+		margin-top: 120px;
+	}
+	.connectwithme{
+		text-align: right;
+		margin: 10px 0 0 0;
+		font-size: 2.5em;
+		color: $primary-color;
+	}
+	.my-summarry{
+		margin-top:10px;
+		font-size: 1em;
 	}
 }
