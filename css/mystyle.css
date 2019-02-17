@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css?family=Oswald");
+body {
+  margin: 0;
+  background-color: #F4ECDB;
+  font-family: "Oswald", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+#navbar {
+  text-align: right;
+}
+#navbar ul li {
+  display: inline-block;
+  list-style: none;
+  margin-left: 15px;
+}
+#navbar ul li a {
+  color: #6B007F;
+  font-size: 18px;
+}
+
+.mylogomobile {
+  text-align: center;
+}
+
+#mywelcome {
+  padding: 80px 0;
+  border-bottom: 1px dashed #DDD4C0;
+}
+
+.myintroduction {
+  color: #6B007F;
+  text-transform: uppercase;
+}
+.myintroduction h1, .myintroduction p {
+  margin: 0;
+  padding: 0;
+}
+.myintroduction h1 {
+  border-bottom: 2px solid #6B007F;
+  width: 75%;
+}
+.myintroduction p {
+  font-size: 1.35em;
+}
+
+.sectiontitle {
+  color: #6B007F;
+  font-size: 2em;
+  text-transform: uppercase;
+}
+
+.sectiontitlewhite {
+  color: #fff;
+  font-size: 2em;
+  text-transform: uppercase;
+}
+
+#projects {
+  padding: 40px 0;
+}
+#projects h1 {
+  text-align: center;
+}
+
+.project-box {
+  padding: 0;
+  border: 1px solid #6B007F;
+  margin: 20px 0;
+  border-radius: 5px;
+}
+.project-box picture img {
+  width: 100%;
+  height: 100%;
+}
+
+.project-image {
+  object-position: 50% 50%;
+  object-fit: none;
+}
+
+.project-text {
+  background-color: #6B007F;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px 0;
+}
+.project-text h3 {
+  font-size: 1.5em;
+  margin: 0;
+  padding: 0;
+}
+
+#myprofile {
+  padding: 20px 0;
+  min-height: 50px;
+  background-color: #6B007F;
+}
+#myprofile h1 {
+  text-align: center;
+}
+
+.image-avatar {
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px dashed #DDD4C0;
+  border-radius: 50%;
+  width: 110px;
+  height: 110px;
+  padding: 5px;
+}
+
+.my-summarry {
+  color: #fff;
+}
+
+.techilove h3 {
+  color: #fff;
+}
+.techilove ul {
+  padding: 0;
+  margin: 0;
+}
+.techilove ul li {
+  margin: 10px;
+  list-style: none;
+  display: inline-block;
+  color: #cccdce;
+}
+.techilove ul li i {
+  font-size: 3em;
+}
+
+/*# sourceMappingURL=mystyle.css.map */
