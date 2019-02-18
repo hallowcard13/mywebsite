@@ -1,0 +1,259 @@
+@import url("https://fonts.googleapis.com/css?family=Muli");
+body {
+  margin: 0;
+  background-color: #F4ECDB;
+  font-family: "Muli", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+#navbar {
+  text-align: right;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  z-index: 10;
+  background-color: #F4ECDB;
+}
+#navbar ul li {
+  display: inline-block;
+  list-style: none;
+  margin-left: 15px;
+}
+#navbar ul li a {
+  color: #6B007F;
+  font-size: 18px;
+}
+
+.mylogomobile {
+  text-align: center;
+}
+
+#welcome-section {
+  padding: 50px 0 90px 0;
+  border-bottom: 1px dashed #DDD4C0;
+  height: 100vh;
+}
+
+.myintroduction {
+  color: #6B007F;
+  text-transform: uppercase;
+}
+.myintroduction h1, .myintroduction p {
+  margin: 0;
+  padding: 0;
+  font-family: "Muli", sans-serif;
+}
+.myintroduction h1 {
+  border-bottom: 2px solid #6B007F;
+  width: 100%;
+  font-size: 1.2em;
+}
+.myintroduction p {
+  font-size: 1.2em;
+  text-align: right;
+}
+
+.sectiontitle {
+  color: #6B007F;
+  font-size: 2em;
+  text-transform: uppercase;
+}
+
+.sectiontitlewhite {
+  color: #fff;
+  font-size: 2em;
+  text-transform: uppercase;
+}
+
+#projects {
+  padding: 40px 0;
+}
+#projects h1 {
+  text-align: center;
+}
+
+.project-box {
+  padding: 0;
+  border: 1px solid #6B007F;
+  margin: 20px 0;
+  border-radius: 5px;
+}
+.project-box picture img {
+  width: 100%;
+  height: 100%;
+}
+
+.project-image {
+  object-position: 50% 50%;
+  object-fit: none;
+}
+
+.project-text {
+  background-color: #6B007F;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px 5px;
+}
+.project-text h3 {
+  font-size: 1.5em;
+  margin: 0;
+  padding: 0;
+}
+
+#myprofile {
+  padding: 20px 0;
+  min-height: 50px;
+  background-color: #6B007F;
+}
+#myprofile h1 {
+  text-align: center;
+}
+
+.image-avatar {
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px dashed #DDD4C0;
+  border-radius: 50%;
+  width: 110px;
+  height: 110px;
+  padding: 5px;
+}
+
+.my-summarry {
+  color: #fff;
+  font-family: "Muli", sans-serif;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.techilove {
+  margin: 30px 0;
+}
+.techilove h3 {
+  color: #fff;
+  text-align: center;
+}
+.techilove ul {
+  padding: 0 0 0 30px;
+  margin: 0;
+}
+.techilove ul li {
+  margin: 10px;
+  list-style: none;
+  display: inline-block;
+  color: #cccdce;
+}
+.techilove ul li i {
+  font-size: 3em;
+}
+
+#contact h3 {
+  font-weight: 600;
+}
+
+.contact-list li {
+  margin-right: 5px;
+  list-style: none;
+  display: inline-block;
+}
+.contact-list li a {
+  color: #6B007F;
+}
+.contact-list li i {
+  font-size: 1.5em;
+}
+
+.downloadmycv {
+  padding: 10px 5px;
+  background-color: #E18942;
+  color: #fff;
+  text-decoration: none;
+  margin: 10px 0;
+  border: 1px solid #000;
+  border-radius: 5px;
+}
+
+@media (min-width: 992px) {
+  .myintroduction h1, .myintroduction p {
+    font-size: 3em;
+  }
+
+  .sectiontitle {
+    font-size: 3em;
+  }
+
+  .sectiontitlewhite {
+    font-size: 3em;
+  }
+
+  #projects {
+    padding: 80px 0 200px 0;
+  }
+
+  .project-text {
+    min-height: 100px;
+  }
+
+  #myprofile {
+    padding: 80px 0;
+  }
+
+  .myavatar {
+    margin: 40px 0;
+  }
+
+  .contact-list li {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+  .contact-list li i {
+    font-size: 3em;
+  }
+
+  .techilove h3 {
+    font-size: 2.5em;
+  }
+  .techilove ul li i {
+    font-size: 6em;
+  }
+
+  .image-avatar {
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px dashed #DDD4C0;
+    border-radius: 50%;
+    width: 310px;
+    height: 310px;
+    padding: 5px;
+    margin-top: 120px;
+  }
+
+  .connectwithme {
+    text-align: right;
+    margin: 10px 0 0 0;
+    font-size: 2.5em;
+    color: #6B007F;
+  }
+
+  .my-summarry {
+    margin-top: 10px;
+    font-size: 1em;
+  }
+}
+@media (min-width: 768px) {
+  .image-avatar {
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px dashed #DDD4C0;
+    border-radius: 50%;
+    width: 310px;
+    height: 310px;
+    padding: 5px;
+    margin-top: 20px;
+  }
+}
+
+/*# sourceMappingURL=mystyle.css.map */
