@@ -9,7 +9,13 @@ a{
 	text-decoration: none;
 }
 #navbar{
+
+   position: fixed;
+   width: 100%;
+   left: 0;
+    z-index: 10;
 	text-align: right;
+	background-color: #F4ECDB;
 	ul{
 		li{
 			display: inline-block;
@@ -26,8 +32,10 @@ a{
 	text-align: center;
 }
 #mywelcome{
-	padding:50px 0 90px 0;
+	//padding:100px 0 90px 0;
 	border-bottom:1px dashed #DDD4C0;
+	min-height: 100vh;
+	padding-top:45vh;
 }
 .myintroduction{
 	color:$primary-color;
@@ -145,10 +153,11 @@ a{
 		a{
 			color:$primary-color;
 		}
-		margin-right: 5px;
+		margin-right: 3px;
+		margin-top: 6px;
 		list-style: none;
 		display: inline-block;
-		i{font-size: 1.5em;}
+		i{font-size: 1em;}
 	}
 	
 }
@@ -167,6 +176,9 @@ a{
 		h1,p{
 			font-size: 3em;
 		}
+	}
+	#mywelcome{
+		padding:20vh 0;
 	}
 	.sectiontitle{
 		font-size: 3em;
@@ -238,5 +250,28 @@ a{
 		padding:5px;
 		margin-top: 20px;
 	}
+	#mywelcome{
+		padding:20vh 0;
+	}
+
+	.myintroduction{
+		h1,p{
+			font-size: 2em;
+		}
+	}
+	.contact-list{
+		li{
+			margin-right: 10px;
+			margin-left: 10px;
+			i{font-size: 2em;}
+		}
+	}
+	.connectwithme{
+		text-align: right;
+		margin: 10px 0 0 0;
+		font-size: 2.5em;
+		color: $primary-color;
+	}
+
 
 }
