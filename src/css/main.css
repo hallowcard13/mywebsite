@@ -1,0 +1,32 @@
+/* purgecss start ignore */
+@tailwind base;
+@tailwind components;
+
+/* purgecss end ignore */
+
+@tailwind utilities;
+/* purgecss start ignore */
+.hw-bgcolor-orange {
+  background-color: #ffa400;
+}
+
+.hw-mobile-menu-but {
+  background: url("/images/bars-solid.png");
+  width: 25px;
+  height: 30px;
+}
+@responsive {
+  .hw-slider-300 {
+    height: 300px;
+  }
+  .hw-slider-500 {
+    height: 500px;
+  }
+  .hw-slider-200 {
+    height: 200px;
+  }
+  .hw-slide-item-300 {
+    width: 300px;
+  }
+}
+/* purgecss end ignore */
