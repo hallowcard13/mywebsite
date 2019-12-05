@@ -1,217 +1,294 @@
-<!doctype html>
-<html class="no-js" lang="">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Hamid Reside - Web Developer</title>
-        <meta name="description" content="hamid reside personal website">
-        <meta name="Keywords" content="hamid reside, hamid reside web developer, dubai web developer, philippines web developer">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+  <!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Hamid Reside Web Developer</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/dist/css/main.css" />
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="#">upgrade your browser</a> to improve your experience.
+      </p>
+    <![endif]-->
+    <div id="app">
+      <!-- logo part -->
+      <header class="container mx-auto px-4">
+        <div class="flex mx-4">
+          <div class="w-1/2 md:w-5/12">
+            <div class="my-4 h-4 w-8 md:h-16 md:w-16">
+              <img src="/dist/images/logo50x50.svg" />
+            </div>
+          </div>
+          <div class="w-1/2 md:w-7/12">
+            <div class="my-4 text-right">
+              <button
+                class="hw-mobile-menu-but btn md:hidden"
+                @click="mobilemenuClick"
+              ></button>
+            </div>
+            <div
+              class="fixed md:relative hw-bgcolor-orange px-2 w-full h-full left-0 top-0 md:block md:bg-transparent"
+              :class="{hidden:!mobilemenu}"
+            >
+              <div class="text-right md:hidden">
+                <button
+                  class="font-hairline text-white text-2xl"
+                  @click="mobilemenuClick"
+                >
+                  X
+                </button>
+              </div>
+              <ul
+                class="text-center my-4 font-mono md:text-center md:my-8 xl:text-right"
+              >
+                <li class="my-3 text-2xl md:text-lg md:inline md:mx-4">
+                  <a
+                    class="hover:text-blue-600 text-white md:text-black "
+                    href="#contactme"
+                    >Contact me</a
+                  >
+                </li>
+                <li class=" my-3 text-2xl md:text-lg md:inline md:mx-4">
+                  <a
+                    class="hover:text-blue-600 text-white md:text-black"
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.upwork.com/o/profiles/users/_~0184efd7ef117cf69a/"
+                    >Hire me on Upwork</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+      <section class="hw-bgcolor-orange sm:py-16">
+        <div class="container mx-auto px-4">
+          <div class="flex flex-wrap mx-4">
+            <div
+              class="w-full sm:w-6/12 sm:px-2 py-4 sm:pt-2 md:pt-12 xl:pt-24 font-mono text-center text-white"
+            >
+              <h1 class="text-2xl sm:text-3xl md:text-5xl">
+                <span class="font-bold">Web Artisan</span> base in the
+                <span class="font-bold">Philippines</span>
+              </h1>
+            </div>
+            <div class="w-full sm:w-6/12 sm:px2">
+              <img
+                class="mt-16"
+                src="/dist/images/undraw_programming_2svr.svg"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Projects slide -->
+      <section class="my-16">
+        <div class="text-center mb-10">
+          <h1 class="text-3xl font-bold font-mono text-gray-500">
+            RECENT PROJECTS
+          </h1>
+        </div>
+        <div
+          class="flex overflow-x-auto hw-slider-300 lg:hw-slider-500 p-2 mr-2"
+        >
+          <div
+            class="hw-slide-item-300  border w-full md:w-3/12 flex-shrink-0 mx-2 shadow text-center"
+          >
+            <a href="https://truckk.com/" rel="noreferrer" target="_blank"
+              ><img class="lg:w-full" src="/dist/images/truckk300px.jpg"
+            /></a>
+            <div class="mt-8 text-2xl sm:text-sm lg:text-2xl">
+              <a href="https://truckk.com/" rel="noreferrer" target="_blank"
+                >Truckk</a
+              >
+            </div>
+          </div>
+          <div
+            class="hw-slide-item-300 border w-full md:w-3/12 flex-shrink-0 mx-2 shadow text-center"
+          >
+            <a href="https://southtravels.com" rel="noreferrer" target="_blank"
+              ><img class="lg:w-full" src="/dist/images/southtravel300px.jpg"
+            /></a>
+            <div class="mt-8 text-2xl sm:text-sm lg:text-2xl">
+              <a
+                href="https://southtravels.com"
+                rel="noreferrer"
+                target="_blank"
+                >Southtravels</a
+              >
+            </div>
+          </div>
+          <div
+            class="hw-slide-item-300 border w-full md:w-3/12 flex-shrink-0 mx-2 shadow text-center"
+          >
+            <a
+              href="https://kabayansouthtravel.com/"
+              rel="noreferrer"
+              target="_blank"
+              ><img
+                class="lg:w-full"
+                src="/dist/images/kabayansouthtravel300px.jpg"
+            /></a>
+            <div class="mt-8 text-2xl sm:text-sm lg:text-2xl">
+              <a
+                href="https://kabayansouthtravel.com/"
+                rel="noreferrer"
+                target="_blank"
+                >Kabayansouthtravel</a
+              >
+            </div>
+          </div>
+          <div
+            class="hw-slide-item-300 border w-full md:w-3/12 flex-shrink-0 mx-2 shadow text-center"
+          >
+            <a href="http://www.yanjoon.com/" rel="noreferrer" target="_blank"
+              ><img
+                class="lg:w-full"
+                src="/dist/images/yanjoon300px.jpg"
+                alt="yanjoon website"
+            /></a>
+            <div class="mt-8 text-2xl sm:text-sm lg:text-2xl">
+              <a href="http://www.yanjoon.com/" rel="noreferrer" target="_blank"
+                >Yanjoon</a
+              >
+            </div>
+          </div>
+          <div
+            class="hw-slide-item-300 border w-full md:w-3/12 flex-shrink-0 mx-2 shadow text-center"
+          >
+            <a
+              href="http://desertsafaridubaionline.com/"
+              rel="noreferrer"
+              target="_blank"
+              ><img class="lg:w-full" src="/dist/images/desertsafari300px.jpg"
+            /></a>
+            <div class="mt-8 text-2xl sm:text-sm lg:text-2xl">
+              <a
+                href="http://desertsafaridubaionline.com/"
+                rel="noreferrer"
+                target="_blank"
+                >Desertsafaridubaionline</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Customer Reviews -->
+      <!-- <section>
+        <div class="container mx-auto px-4 pb-8">
+          <div class="flex flex-wrap -mx-4">
+            <div class="w-full px-4 ">
+              hi
+              <svg
+                class="h-8 w-8"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M10 15l-4 4v-4H2a2 2 0 0 1-2-2V3c0-1.1.9-2 2-2h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-8zM5 7v2h2V7H5zm4 0v2h2V7H9zm4 0v2h2V7h-2z"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </section> -->
+      <!-- Contact me -->
+      <section id="contactme" class="mb-4 bg-gray-100 py-4">
+        <div class="container mx-auto px-4">
+          <div class="flex flex-wrap -mx-4">
+            <div class="w-full mb-4 text-center sm:w-1/2  px-4">
+              <h3
+                class="sm:mt-48 sm:text-3xl md:text-5xl font-bold text-2xl text-blue-500"
+              >
+                Get in touch
+              </h3>
+              <p class="text-gray-500">
+                Fill up the form with your info and message, and I'll get back
+                to you shortly.
+              </p>
+            </div>
+            <div class="w-full sm:w-1/2 px-4">
+              <form
+                class=" rounded my-4 bg-white px-2 py-4 shadow sm:px-4 sm:py-6"
+                name="contact"
+                method="POST"
+                data-netlify="true"
+              >
+                <div class="mb-4">
+                  <label class="block mb-2 text-gray-500" for="client-name"
+                    >Your Full Name:</label
+                  >
+                  <input
+                    type="text"
+                    name="client-name"
+                    class="border-b-2 focus:outline-none focus:border-orange-400 p-0 w-full"
+                  />
+                </div>
+                <div class="mb-4">
+                  <label class="block mb-2 text-gray-500" for="client-email"
+                    >Your Email Address:</label
+                  >
+                  <input
+                    type="email"
+                    name="client-email"
+                    class="border-b-2 focus:outline-none focus:border-orange-400 p-0 w-full"
+                  />
+                </div>
+                <div class="mb-4">
+                  <label class="block mb-2 text-gray-500" for="client-number"
+                    >Your Phone Number:</label
+                  >
+                  <input
+                    type="text"
+                    name="client-number"
+                    class="border-b-2 focus:outline-none focus:border-orange-400 p-0  w-full"
+                  />
+                </div>
+                <div class="mb-4">
+                  <label class="mb-2 block text-gray-500" for="message-box"
+                    >Your Message:</label
+                  >
+                  <textarea
+                    class="border rounded w-full p-2 focus:border-orange-400"
+                    name="messsage-box"
+                    rows="5"
+                  ></textarea>
+                </div>
+                <div class="mb-4">
+                  <button
+                    type="submit"
+                    class="bg-blue-500 py-2 px-4 text-white block hover:bg-blue-700 w-full"
+                  >
+                    Send to Hamid
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <div class="container mx-auto">
+          <div class="flex flex-wrap">
+            <div class="w-full text-center">
+              Copyright &copy; 2019. All rights reserved.
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
 
-        <link rel="manifest" href="site.webmanifest">
-        <link rel="apple-touch-icon" href="icon.png">
-        <!-- Place favicon.ico in the root directory -->
-        <link rel="apple-touch-icon" sizes="57x57" href="/images/myfavicons/apple-icon-57x57.png">
-		<link rel="apple-touch-icon" sizes="60x60" href="/images/myfavicons/apple-icon-60x60.png">
-		<link rel="apple-touch-icon" sizes="72x72" href="/images/myfavicons/apple-icon-72x72.png">
-		<link rel="apple-touch-icon" sizes="76x76" href="/images/myfavicons/apple-icon-76x76.png">
-		<link rel="apple-touch-icon" sizes="114x114" href="/images/myfavicons/apple-icon-114x114.png">
-		<link rel="apple-touch-icon" sizes="120x120" href="/images/myfavicons/apple-icon-120x120.png">
-		<link rel="apple-touch-icon" sizes="144x144" href="/images/myfavicons/apple-icon-144x144.png">
-		<link rel="apple-touch-icon" sizes="152x152" href="/images/myfavicons/apple-icon-152x152.png">
-		<link rel="apple-touch-icon" sizes="180x180" href="/images/myfavicons/apple-icon-180x180.png">
-		<link rel="icon" type="image/png" sizes="192x192"  href="/images/myfavicons/android-icon-192x192.png">
-		<link rel="icon" type="image/png" sizes="32x32" href="/images/myfavicons/favicon-32x32.png">
-		<link rel="icon" type="image/png" sizes="96x96" href="/images/myfavicons/favicon-96x96.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="/images/myfavicons/favicon-16x16.png">
-		<link rel="manifest" href="/manifest.json">
-		<meta name="msapplication-TileColor" content="#ffffff">
-		<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-		<meta name="theme-color" content="#ffffff">
-
-        <link rel="stylesheet" href="css/bootstrap-grid.css">
-        <link rel="stylesheet" href="css/mystyle.css">
-        <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    </head>
-    <body>
-    	<header>
-    		<nav id="navbar">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-12">
-                                <ul>
-                                    <li><a href="#projects">Projects</a></li>
-                                    <li><a href="#myprofile">About</a></li>
-                                    <li><a href="#contact">Contact</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-					
-				</nav>
-    	</header>
-    	<section id="mywelcome">
-			<div class="container">
-				<div class="row no-gutters">
-					<div class="col-12">
-						<div class="mylogomobile">
-							<picture>
-								<source srcset="/images/hamidlogo-small.png"
-							            media="(max-width: 600px)">
-							            <img src="/images/hamidlogo-medium.png">
-							</picture>
-							
-						</div>
-					</div>
-					<div class="col-12">
-						<div class="myintroduction">
-							<h1>Hamid Reside</h1>
-							<p>Web developer</p>
-						</div>
-					</div>
-				</div>
-			</div>    		
-    	</section>
-    	<section id="projects">
-    		<h1 class="sectiontitle">Projects</h1>
-    		<div class="container">
-    			<div class="row">
-    				<div class="col-12 col-sm-6 col-md-4">
-    					<div class="project-box">
-    						<a href="https://southtravels.com/" target="_blank">
-    						<picture>
-    							 <source srcset="/images/proj-image/southtravel300px.jpg"
-							            media="(max-width: 600px)">
-							    <img class="project-image" src="/images/proj-image/southtravel400px.jpg" />
-    						</picture>
-    						</a>
-    						<div class="project-text">
-    							<h3>South Travels Website</h3>
-    						</div>
-    					</div>
-    				</div>
-    				<div class="col-12 col-sm-6 col-md-4">
-    					<div class="project-box">
-    						<a href="https://kabayansouthtravel.com/" target="_blank">
-    						<picture>
-    							 <source srcset="/images/proj-image/kabayansouthtravel300px.jpg"
-							            media="(max-width: 600px)">
-							    <img class="project-image" src="/images/proj-image/kabayansouthtravel400px.jpg" />
-    						</picture>
-    						</a>
-    						<div class="project-text">
-    							<h3>Kabayan South Travel Website</h3>
-    						</div>
-    					</div>
-    				</div>
-    				<div class="col-12 col-sm-6 col-md-4">
-    					<div class="project-box">
-    						<a href="http://desertsafaridubaionline.com/" target="_blank">
-    						<picture>
-    							 <source srcset="/images/proj-image/desertsafari300px.jpg"
-							            media="(max-width: 600px)">
-							    <img class="project-image" src="/images/proj-image/desertsafari400px.jpg" />
-    						</picture>
-    						</a>
-    						<div class="project-text">
-    							<h3>Dubai Desert Safari Website</h3>
-    						</div>
-    					</div>
-    				</div>
-    				<div class="col-12 col-sm-6 col-md-4">
-    					<div class="project-box">
-    						<a href="https://truckk.com/" target="_blank">
-    						<picture>
-    							 <source srcset="/images/proj-image/truckk300px.jpg"
-							            media="(max-width: 600px)">
-							    <img class="project-image" src="/images/proj-image/truckk400px.jpg" />
-    						</picture>
-    						</a>
-    						<div class="project-text">
-    							<h3>Truckk Website</h3>
-    						</div>
-    					</div>
-    				</div>
-    				<div class="col-12 col-sm-6 col-md-4">
-    					<div class="project-box">
-    						<a href="http://www.yanjoon.com/" target="_blank">
-    						<picture>
-    							 <source srcset="/images/proj-image/yanjoon300px.jpg"
-							            media="(max-width: 600px)">
-							    <img class="project-image" src="/images/proj-image/yanjoon400px.jpg" />
-    						</picture>
-    						</a>
-    						<div class="project-text">
-    							<h3>Yanjoon Website</h3>
-    						</div>
-    					</div>
-    				</div>
-    			</div>
-    		</div>
-    	</section>
-    	<section id="myprofile">
-    		<h1 class="sectiontitlewhite">About Me</h1>
-    		<div class="container">
-    			<div class="row">
-    				<div class="col-12 col-sm-6">
-    					<div class="myavatar">
-    						<div class="image-avatar">
-    							<picture>
-	    							 <source srcset="/images/hamidavatar/hamidavatar100.png"
-								            media="(max-width: 600px)">
-								    <img class="project-image" src="/images/hamidavatar/hamidavatar300.png" />
-    							</picture>
-    						</div>
-    						<div class="my-summarry">
-    							Hi! My name is Hamid, I'm a Web Developer from Philippines and now working and living in Dubai. You can download my cv or resume to know more about me.
-    							<p><a target="_blank" href="/images/Hamid-Resume.pdf" class="downloadmycv">Download My CV / Resume</a></p>
-    						</div>
-
-    					</div>
-    				</div>
-    				<div class="col-12 col-sm-6">
-    					<div class="techilove">
-    						<h3>Tech that i love and use</h3>
-    						<ul>
-    							<li><i class="devicon-php-plain"></i></li>
-    							<li><i class="devicon-mysql-plain-wordmark"></i></li>
-    							<li><i class="devicon-html5-plain-wordmark"></i></li>
-    							<li><i class="devicon-css3-plain-wordmark"></i></li>
-    							<li><i class="devicon-javascript-plain"></i></li>
-    							<li><i class="devicon-sass-original"></i></li>
-    							<li><i class="devicon-bootstrap-plain-wordmark"></i></li>
-    							<li><i class="devicon-jquery-plain-wordmark"></i></li>
-    							<li><i class="devicon-vuejs-plain-wordmark"></i></li>
-    							<li><i class="devicon-react-original-wordmark"></i></li>
-    							<li><i class="devicon-laravel-plain-wordmark"></i></li>
-    							<li><i class="devicon-webpack-plain-wordmark"></i></li>
-    							<li><i class="devicon-github-plain-wordmark"></i></li>
-    							<li><i class="devicon-photoshop-plain"></i></li>
-    						</ul>
-    					</div>
-    				</div>
-    			</div>
-    		</div>
-    	</section>
-    	<section id="contact">
-    		<div class="container">
-    			<div class="row">
-    				<div class="col-6">
-    					<h3 class="connectwithme">Connect with me</h3>
-    				</div>
-    				<div class="col-6">
-    					<ul class="contact-list">
-    						<li><a href="https://www.freecodecamp.org/hallowcard13" target="_blank"><i class="fab fa-free-code-camp"></i></a></li>
-    						<li><a target="_blank" href="https://github.com/hallowcard13"><i class="fab fa-github-square"></i></a></li>
-    						<li><a target="_blank" href=""><i class="fab fa-stack-overflow"></i></a></li>
-    						<li><a target="_blank" href="https://twitter.com/geekHamid"><i class="fab fa-twitter-square"></i></a></li>
-    						<li><a href="mailto:hamid.reside@gmail.com?Subject=Hello%20Hamid"><i class="fas fa-envelope-square"></i></a></li>
-
-    					</ul>
-    				</div>
-    			</div>
-    		</div>
-    	</section>
-    </body>
+    <script src="dist/js/app.js" async defer></script>
+  </body>
 </html>
